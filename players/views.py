@@ -3,6 +3,7 @@ from rest_framework import viewsets, permissions
 from .models import Player, Paradigm, Programmer
 from .serializers import PlayerSerializer, ParadigmSerializer, ProgrammerSerializer
 
+
 class PlayerViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.

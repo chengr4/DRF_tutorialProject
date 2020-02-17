@@ -6,6 +6,7 @@ class Paradigm(models.Model):
   def __str__(self):
     return self.name
 
+
 class Player(models.Model):
   name = models.CharField(max_length=50)
   country = models.CharField(max_length=50, default='country/region')
