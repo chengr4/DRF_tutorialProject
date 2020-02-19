@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'players',
     'snippets.apps.SnippetsConfig',
+    'patients',
 ]
 
 MIDDLEWARE = [

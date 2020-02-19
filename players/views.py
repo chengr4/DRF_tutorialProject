@@ -1,4 +1,4 @@
-from django.shortcuts import render
+# from django.shortcuts import render
 from rest_framework import viewsets, permissions
 from .models import Player, Paradigm, Programmer
 from .serializers import PlayerSerializer, ParadigmSerializer, ProgrammerSerializer
