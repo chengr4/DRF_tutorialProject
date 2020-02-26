@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'players',
+    'players', # add the own app named players for example
     'snippets.apps.SnippetsConfig',
     'patients',
 ]

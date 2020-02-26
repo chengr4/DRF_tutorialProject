@@ -22,7 +22,7 @@ from django.contrib.auth.models import User
     language = serializers.ChoiceField(choices=LANGUAGE_CHOICES, default='python')
     style = serializers.ChoiceField(choices=STYLE_CHOICES, default='friendly')
 
-    # create() and update() work when calling serializer.save()
+    # create() and update() work when calling serializer.save() 
     def create(self, validated_data):
         """
         Create and return a new `Snippet` instance, given the validated data.
