@@ -1,4 +1,5 @@
 from django.db import models
+import random
 
 class Patient(models.Model):
 
@@ -18,6 +19,9 @@ class Patient(models.Model):
 
   # calculate for raw data
   def save(self, *args, **kwargs):
-    self.dbp = self.dbp_raw /2
-    super().save(*args, **kwargs) # real save method
+    # here to do calculation for raw data (produce random for simple case)
+    self.sbp = random.randint(100,130)
+    self.dbp = random.randint(70,90)
+    self.hr = random.randint(60,90)
+    super().save(*args, **kwargs) # real save method (must add!!)
     
