@@ -14,4 +14,3 @@ class PatientSerializer(serializers.HyperlinkedModelSerializer):
         model = Patient
         #fields = ['id', 'name', 'sbp_raw', 'dbp_raw', 'hr_raw']
         fields = '__all__'
-

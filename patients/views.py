@@ -3,8 +3,6 @@ from rest_framework import viewsets, permissions
 from .models import Patient
 from .serializers import PatientSerializer
 
-
-
 class PatientViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows users to be viewed or edited.
@@ -15,4 +13,3 @@ class PatientViewSet(viewsets.ModelViewSet):
 
     # can be controlled in setting
     # permissions_classes = (permissions.IsAuthenticatedOrReadOnly,)
-

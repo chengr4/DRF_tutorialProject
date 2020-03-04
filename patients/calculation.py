@@ -1,4 +1,6 @@
-import sqlite3
+# 可以整個檔刪除
+'''import sqlite3
+
 
 conn = sqlite3.connect('../db.sqlite3')
 print("Open DB successfully")
@@ -14,4 +16,4 @@ for row in cursor:
   c.execute("UPDATE patients_patient set hr = %d where ID = %d" % (row[3],row[0]))
 
 conn.commit()
-conn.close()
+conn.close()'''

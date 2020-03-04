@@ -4,14 +4,13 @@ import random
 class Patient(models.Model):
 
   # Fields
-  #
-  name = models.CharField(max_length=10)
-  sbp_raw = models.IntegerField(default=0)
-  dbp_raw = models.IntegerField(default=0)
-  hr_raw = models.IntegerField(default=0)
-  sbp = models.IntegerField(default=0)
-  dbp = models.IntegerField(default=0)
-  hr = models.IntegerField(default=0)
+  name = models.CharField(max_length=10) # patient's name
+  sbp_raw = models.IntegerField(default=0) # systolic blood pressure raw data
+  dbp_raw = models.IntegerField(default=0) # diastolic blood pressure raw data
+  hr_raw = models.IntegerField(default=0) # heart rate raw data
+  sbp = models.IntegerField(default=0) # systolic blood pressure calculated
+  dbp = models.IntegerField(default=0) # diastolic blood pressure calculated
+  hr = models.IntegerField(default=0) # heart rate calculated
 
   # Methods
   def __str__(self):
